@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="toggleButton" onclick="A()">Toggle Visibility</button>
+    <div id="toggleDiv" style="display: none;">This is a toggled div.</div>
+</body>
+<script>
+    function A() {
+        let Z= document.getElementById('toggleDiv');
+        if (Z.style.display == 'none') {
+            Z.style.display = 'block'
+        } else {
+            Z.style.display = 'none'
+        }
+    }
+</script>
+</html>
